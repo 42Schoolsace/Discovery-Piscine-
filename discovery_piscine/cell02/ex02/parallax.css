@@ -1,0 +1,56 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.parallax-1 {
+  width: 100%;
+  height: 1000px;
+  background: url('https://www.thesprucepets.com/thmb/3ABKoAPm0Hu4PcWsDH1giawq7ck=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/chinese-dog-breeds-4797219-hero-2a1e9c5ed2c54d00aef75b05c5db399c.jpg');
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  }
+  .parallax-1 h2 {
+    margin: auto;
+    position: relative;
+    left: 500x;
+    top: 300px;
+    width: 250px;
+    height: 32px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+  }
+
+  .parallax-2 {
+    width: 100%;
+    height: 1000px;
+    background: url('https://media.istockphoto.com/id/1328887289/photo/happy-dog.jpg?b=1&s=170667a&w=0&k=20&c=mp3L73BC14QUuk1EQaYtZ1-wwJRW9HAffcsGZNyMy_o=');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+          
+      }
+
+      /* Styling the title of second parallax */
+      .parallax-2 h2 {
+          margin: auto;
+          position: relative;
+          left: 500x;
+          top: 300px;
+          width: 250px;
+          height: 37px;
+          padding: 10px;
+          color: black;
+          text-align: center;
+          font-size: 30px;
+          font-family: Verdana;
+      }
+
+      /* Styling the content or paragraph */
+      .para-1 {
+          padding: 50px;
+          background-color: black;
+          color: white;
+          font-size: 17px;
+      }
+
+ 

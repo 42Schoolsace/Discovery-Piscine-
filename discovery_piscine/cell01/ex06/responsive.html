@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+* {
+    box-sizing: border-box;
+}
+.column {
+float: left;
+width: 50%;
+padding: 110px 0;
+border: 1px solid black;
+height: 100vh-; 
+}
+.row:after {
+height: 100vh;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+table{
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+height: 100%;
+width: 100%;
+}
+td {
+overflow: hidden; 
+text-overflow: ellipsis; 
+word-wrap: break-word;
+}
+</style>
+</head>
+<body>
+
+
+
+
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <p>Some text..</p>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <p>Some text..</p>
+  </div>
+</div>
+
+</body>
+</html>
