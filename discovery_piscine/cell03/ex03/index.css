@@ -1,62 +1,81 @@
-/* CSS styles go here */
 body {
     font-family: Arial, sans-serif;
-    function deleteTodo(index) {
-        todoList.splice(index, 1);
-        localStorage.setItem("todos", JSON.stringify(todoList));
-        renderTodoList();
-      }
-      
   }
   
-  .header {
-    background-color: blue;
-    padding: 20px;
+  h1 {
     text-align: center;
   }
   
-  #myInput {
-    border: none;
-    width: 75%;
+  #ft_list {
+    border: 1px solid #ccc;
     padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 20px auto;
+    max-width: 500px;
   }
   
-  .addBtn {
+  #ft_list div {
+    border: 1px solid #ccc;
     padding: 10px;
-    background-color: #333;
-    color: white;
+    margin-bottom: 10px;
     cursor: pointer;
   }
   
-  .addBtn:hover {
-    background-color: blueviolet;
-    color: white;
+  #ft_list div:hover {
+    background-color: #eee;
   }
   
-  .close {
-    float: right;
-    font-size: 20px;
-    font-weight: bold;
-    color: blueviolet;
+  #ft_list .config {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 999;
+  }
+  
+  #ft_list .config p {
+    margin: 0;
+  }
+  
+  #ft_list .config button {
     margin-right: 10px;
   }
   
-  .close:hover {
-    color: red;
-  }
-  
-  .checked {
-    text-decoration: line-through;
-  }
-  
-  li {
-    list-style-type: none;
+  button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
     padding: 10px;
     margin-bottom: 10px;
-    border-radius: 5px;
-    background-color: blueviolet;
+    cursor: pointer;
   }
+  
+  button:hover {
+    background-color: #3e8e41;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"]:focus {
+    outline: none;
+    border-color: #4CAF50;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
   
   
