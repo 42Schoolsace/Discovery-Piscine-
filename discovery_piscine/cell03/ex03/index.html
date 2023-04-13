@@ -1,23 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="todo.js">  
-<link rel="stylesheet" href="index.css"
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    /* CSS styles go here */
-  </style>
-</head>
-<body>
-  <div id="myDIV" class="header">
-    <h2 style="margin:5px">My To Do List</h2>
-    <input type="text" id="myInput" placeholder="Title...">
-    <span onclick="newElement()" class="addBtn">Add</span>
-  </div>
+<link rel="stylesheet" href="index.css">  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Task Management System</title>
 
-  <ul id="myUL">
-  </ul>
+  </head>
+  <body>
+    <div id="ft_list">
+      <!-- TO DO list will be dynamically generated here -->
+    </div>
+    <button onclick="createNew()">New</button>
+    <script>
+      
+      
+      // Load any saved tasks from cookie
+      var tasks = getCookie("tasks");
+      if (tasks !== "") {
+        document.getElementById("ft_list").innerHTML = tasks;
+      }
+      
+      // Create a new task and add it to the top of the list
+      function createNew() {
+        var task = prompt("Enter a new task:");
+        if (task !== null && task !== "") {
+          var div = document.createElement("div");
+          div.innerHTML = task;
+          div.onclick = function() {
+            if (confirm("Are you sure you want to remove this task?")) {
+              this.parentElement.removeChild(this);
+              saveTasks();
+            }
+          };
+          document.getElementById("ft_list").insertBefore(div, document.getElementById("ft_list").firstChild);
+          saveTasks();
+        }
+      }
+      
+      // Save the current list of tasks as a cookie
+      function saveTasks() {
+        var list = document.getElementById("ft_list").innerHTML;
+        setCookie("tasks", list, 365);
+      }
+      
+      // Set a cookie
+      function setCookie(name, value, days) {
+        var expires = "";
+        if (days) {
+          var date = new Date();
+          date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+          expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + (value || "") + expires + "; path=/";
+      }
 
-  <script src="todo.js"></script>
-</body>
+      // Get a cookie
+      function getCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+          var c = ca[i];
+          while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+          if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+        }
+        return "";
+      }
+    </script>
+  </body>
 </html>
