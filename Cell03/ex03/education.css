@@ -1,0 +1,225 @@
+
+ 
+   .parallax-1 {
+    width: 100%;
+    height: 600px;
+    background: url('https://skyprep.com/wp-content/uploads/2013/07/Alfred_Quotes1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    }
+    .parallax-1 h2 {
+      margin: auto;
+      position: relative;
+      left: 500x;
+      top: 300px;
+      width: 250px;
+      height: 32px;
+      padding: 10px;
+      color: red;
+      
+      
+    }
+    @keyframes fadein {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    .parallax-2 {
+      width: 100%;
+      height: 4000px;
+      background: url('https://www.unicef.org/philippines/sites/unicef.org.philippines/files/styles/hero_desktop/public/UNIPH2019008.jpg?itok=MQfuqTGE');
+      background-size: cover;
+      background-attachment: fixed;
+            
+        }
+  
+        /* Styling the title of second parallax */
+        .parallax-2 h2 {
+            margin: auto;
+            position: relative;
+            left: 500x;
+            top: 300px;
+            width: 250px;
+            height: 37px;
+            padding: 10px;
+            color: black;
+            text-align: center;
+            font-size: 30px;
+            font-family: Verdana;
+        }
+ 
+        .para-1 {
+          padding: 50px;
+          background-color: black;
+          color: white;
+          font-size: 17px;
+      }
+  table, tr, td {
+    border-collapse: collapse;
+  }
+  
+  td {
+    padding: 0;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+    z-index: 2;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    transition: 0.3s;
+  }
+  
+  /* Highlight the active/current link */
+  .active {
+    background-color: #0091b9;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #0091b9;
+    color: white;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Main title styles */
+  .maintitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 600px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+/* Style the heading */
+h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+  color: red;
+  padding-top: 5rem;
+}
+
+/* Style the paragraphs */
+p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: white;
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 80%;
+  text-align: justify;
+}
+.graphimage {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  margin: 20px 0;
+}
+.graphimage img {
+  max-width: 100%;
+  height: auto;
+}
+
+.quoteimage img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    position: absolute;
+}
+.quoteimage img {
+ height: 700px;
+ width: 1200px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
